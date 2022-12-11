@@ -1,83 +1,68 @@
 * {
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  list-style-type: none;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	list-style-type: none;
 }
 
 .box {
-  width: 60%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  margin: auto;
-  border: 2px dashed;
-  padding: 30px;
+	width: 60%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin: auto;
+	border: 2px dashed;
+	padding: 30px;
 }
 
 .button {
-  background: #218bff;
-  padding: 10px 10px;
-  width: 90px;  
-  border: none;
-  border-radius: 5px;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-size: 15px;
+	background: #218bff;
+	padding: 10px 10px;
+	width: 90px;  
+	border: none;
+	border-radius: 5px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 15px;
 
-  transition: .5s;
+	transition: .5s;
 }
 
 .button:hover {
-  background: #0969da;
+	background: #0969da;
 }
 
 .block-animation {
-  display: block;
-  border: 1px solid #E0E0E0;
-  margin-top: 15px;
-  margin-bottom: 15px;
+	border: 1px solid #E0E0E0;
+	margin-top: 15px;
+	margin-bottom: 15px;
 
-  animation-name: move;
-  animation-duration: 2s;
-  overflow: hidden;
-
-  transition: max-height 0.1s cubic-bezier(1, 0, 1, 0);
-
-}
-
-@keyframes move {
-  0% {
-    max-height: 0px;
-  };
-
-  50% {
-    max-height: 50px;
-  }
-
-  100% {
-    max-height: 120px;
-  };
+	overflow: hidden;
+	max-height: 1000px;
+	transition: max-height 1s cubic-bezier(0.3, 0, 0.3, 0);
 }
 
 .blockPadding {
-  padding: 20px;
-  line-height: 1.5;
-  font-size: 14px;
+	padding: 20px;
+	line-height: 1.5;
+	font-size: 14px;
 }
 
 .copy {
-  text-align: right;
-  margin-top: 30px;
-  color: #b7b4b4;
-  font-size: 14px;
+	text-align: right;
+	margin-top: 30px;
+	color: #b7b4b4;
+	font-size: 14px;
 }
 
 .bdr {
-  outline: 3px solid #93C7FE;
+	outline: 3px solid #93C7FE;
 }
 
 .displayAnimNone {
-  display: none;
+  overflow: hidden;
+	max-height: 0;
+	transition: max-height 1s cubic-bezier(0, 1, 0, 1);
+  border: none;
 }
